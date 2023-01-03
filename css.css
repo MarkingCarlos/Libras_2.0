@@ -84,10 +84,6 @@ list-style: none;
 	}
 	}
 
-.menu a:hover{
-	
-}
-
 a{
 	text-decoration: none;
 	color: whitesmoke;
@@ -358,6 +354,7 @@ legend{
 	pointer-events: none;
 	transition: .5s;
 	font-family: 'Roboto', sans-serif;
+	
 }
 
 .inputuser:focus ~.labelinput, .inputuser:valid ~.labelinput{
@@ -383,3 +380,4 @@ legend{
 	cursor: pointer;
 	border-radius: 10px;
 }
+
