@@ -1,0 +1,429 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+body{		
+	/*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	font-size: 25px;*/
+	background-color:#7531C9;
+}
+header{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+margin-bottom: 10px;
+}
+
+.container p{
+	color: white;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#comprovante {
+	margin-top: 10px; /* Adicione algum espaçamento superior se necessário */
+}
+
+@media(min-width:600px){
+	body{
+		font-size: 15px;
+	}
+	header div{
+	font-size: 30px;
+	}
+	}
+
+@media(min-width:550px){
+	.nome img{
+	width: 800px;
+	}
+	}
+.nome{
+	transform: scale(0.2) translateY(45vh);
+	opacity: 0;
+	animation: linear 1s tnome forwards;
+}
+
+@keyframes tnome {
+
+	100%{
+		transform: scale(1) translateY(0);
+		opacity: 1;
+	}
+}
+
+.menu{
+	background-color:#7531C9;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	z-index: 1;
+	/*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+	font-size: 25px;
+	
+}
+
+
+.menu li{
+list-style: none;
+}
+
+.menu ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu a{
+	display: block;
+	padding: 10px 10px;
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+}
+
+@media(min-width:1000px){
+	.menu a{
+		padding: 10px 20px;
+	}
+	}
+
+a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+ /* Estilo para o fundo escuro que cobre o restante da página quando o pop-up é exibido */
+ .overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo para o pop-up */
+.popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: white;
+	border: 1px solid #ccc;
+	z-index: 1;
+}
+
+a:hover{
+	text-decoration: underline;
+
+}
+.titulo{
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+	color: azure;
+	font-size: 3.5em;
+}
+
+
+.subtitulo{
+	text-align: center;
+	font-style: italic;
+	font-family: 'Satisfy', cursive;
+	color: azure;
+	font-size: 2.5em;
+}
+
+.perfil img {
+	border-radius: 100%;
+	width: 6em;
+}
+
+
+@media(min-width:900px){
+	.button i{
+	color: white;
+	font-size: 4em;
+	}
+	}
+
+.sobre{
+	height: 100vh;
+	padding: 2em;	
+}
+
+.sobre h2{
+	color: #f36273;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3em;
+	margin-top: 0.5em;
+}
+.sobre p{
+	color: white;
+	font-size: 1.3em;
+}
+
+@media(min-width:1000px){
+	.sobre{
+	height: 100vh;
+	padding: 5em 5em 0em 5em;
+	}
+	.sobre h2{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5em;
+	margin-top: 0em;
+	}
+	.sobre p{
+	font-size: 2.4em;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 0em;
+	}
+	}
+ 
+.curso{
+	height: 100vh;
+	padding: 2em;	
+}
+
+.curso h2{
+	color: #f36273;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3em;
+	margin-top: 0.5em;
+}
+
+.curso p{
+	color: white;
+	font-size: 1.0em;
+	margin-bottom: 2vh;
+}
+
+@media(min-width:1000px){
+	.curso{
+	height: 100vh;
+	padding: 5em 5em 0em 5em;
+	}
+	.curso h2{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5em;
+	margin-top: 0em;
+	}
+	.curso p{
+	font-size: 1.5em;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 0em;
+	}
+	}
+#importante{	
+	font-weight: 900;
+	color: dodgerblue;
+}
+
+.contato a{
+	transition: text-shadow 1s;
+	color: azure;
+	
+}
+
+.contato a:active,
+.contato a:hover{
+	
+	text-shadow: 0px 0px 25px black;
+}
+.contato .icons{
+	text-align: center;
+	font-size: 4em;
+	margin-top: 0em;
+	
+}
+.contato h2{
+	font-size: 3.8em;
+	text-align: center;
+	color: #f36273;
+	font-family: 'Bebas Neue', cursive;
+}
+
+@media(min-width:500px){
+	.contato{
+		padding-top: 5em;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+		
+	}
+	.contato .icons{
+	text-align: center;
+	font-size: 8em;
+	
+	}
+	}
+@media(max-width:460px){
+	.contato{
+		padding-top: 5em;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.contato footer{
+		font-size: 0.8em;
+	}
+	}
+
+.rodape{
+	color: whitesmoke;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+.rodape p{
+	color: white;
+	font-size: 1.0em;
+	margin-left: 0.2em;
+}
+
+.whatsapp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.whatsapp a{
+	text-decoration: none;
+}
+footer{
+	margin-right: 0.5em;
+}
+@media(min-width:600px){
+	.rodape{
+	color: whitesmoke;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5em;
+	text-align: center;
+}
+}
+.formulario{
+	margin-top: 8em;
+}
+@media(min-width:700px){
+	.formulario{
+	margin-top: 2em;
+}
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding-top: 8em;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+fieldset{
+	border: 0.5em solid dodgerblue;
+	padding: 0.5em;
+	width: 23em;
+	border-radius: 1em;
+	
+}
+@media(min-width:600px){
+	fieldset{
+	border: 0.5em solid dodgerblue;
+	padding: 0.5em;
+	width: 50em;
+	border-radius: 1em;
+}
+}
+legend{
+	border: 1px solid  dodgerblue;
+	padding: 5px;
+	text-align: center;
+	background: dodgerblue;
+	border-radius: 5px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+@media(min-width:600px){
+	legend{
+	font-size: 2em;
+}
+}
+
+.inputbox{
+	position: relative;
+	margin-bottom: 4vh;	
+}
+
+.inputbox p{
+	color: white;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+
+.inputuser{
+	background: none;
+	border: none;
+	border-bottom: 1px solid white;
+	outline: none;
+	color: white;
+	font-size: 1em;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.labelinput{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	pointer-events: none;
+	transition: .5s;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.inputuser:focus ~.labelinput, .inputuser:valid ~.labelinput{
+	top: -20px;
+	font-size: 12px;
+}
+
+#data_nascimento{
+	border: none;
+	padding: 8px;
+	border-radius: 5px;
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+	
+}
+.btn{
+	background: #f36273;
+	width: 100%;
+	border: none;
+	padding: 8px;
+	color: white;
+	font-size: 1.3em;
+	cursor: pointer;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+
